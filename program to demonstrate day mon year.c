@@ -1,0 +1,17 @@
+#include <stdio.h>
+struct date{
+int day;
+int mon;
+    int year;
+};
+struct student {
+int id;
+char name[20];
+struct date dob;
+ };
+ int main(){
+ struct student s1={101,"kiran",{15,8,2007}};
+ printf("name:%s\n",s1 .name);
+ printf("DOB:%d-%d-%d\n",s1.dob.day,s1.dob.mon,s1.dob.year);
+ return 0;
+ }
